@@ -6,7 +6,7 @@
           <div class="text-h6">Processar Job</div>
           <div class="row">
             <q-input v-model="job" outlined dense debounce="300" label="Job" class="q-pr-xs" style="width: 300px"/>
-            <q-btn label="Buscar arquivos" color="primary" style="" @click="buscarArquivos" />
+            <q-btn label="Buscar arquivos" color="primary" style="" @click="buscarArquivos" :disable="!job"/>
           </div>
         </div>
       </div>
